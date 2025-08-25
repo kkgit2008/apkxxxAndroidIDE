@@ -148,6 +148,7 @@ fun Project.configureAndroidModule(
             )?.identifier]
               ?: throw UnsupportedOperationException("Universal APKs are not supported!")
 
+
             output.versionCode.set(100 * projectVersionCode + verCodeIncr)
           }
         }
